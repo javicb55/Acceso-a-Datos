@@ -91,6 +91,14 @@ public class Libro {
         this.nombreArchivo = filename;
         this.save();
     }
+    
+    
+    private void testExtension(){
+        //Comprobar que el nombre de archivo termine en xlsx, sino añadirselo.
+        if(nombreArchivo.substring(nombreArchivo.length() -5, nombreArchivo.length() !== ".xlsx")){
+            
+        }
+    }
 }
 
 
