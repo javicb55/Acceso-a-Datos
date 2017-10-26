@@ -28,6 +28,7 @@ public class Libro {
     }
 
     public Libro(String nombreArchivo) {
+        this.hojas = new ArrayList<>();
         this.nombreArchivo = nombreArchivo;
     }
     
@@ -94,9 +95,16 @@ public class Libro {
     
     
     private void testExtension(){
-        //Comprobar que el nombre de archivo termine en xlsx, sino añadirselo.
-        if(nombreArchivo.substring(nombreArchivo.length() -5, nombreArchivo.length() !== ".xlsx")){
-            
+        //Comprobar que el nombre de archivo termine en xlsx, sino añadirselo
+        
+        int finExtension        = nombreArchivo.length() - 1;
+        int inicioExtension     = finExtension -5;
+        String extensionArchivo = nombreArchivo.substring(inicioExtension, finExtension);
+        String miExtension      = ".xlsx";
+        
+        
+        if(!nombreArchivo.equals(miExtension)){
+            nombreArchivo += miExtension;
         }
     }
 }
