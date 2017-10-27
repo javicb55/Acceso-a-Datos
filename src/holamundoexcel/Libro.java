@@ -1,6 +1,8 @@
 package holamundoexcel;
 
 
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -59,6 +61,10 @@ public class Libro {
     }
     
     public void load(){
+        FileInputStream fichero = null;
+        
+        File miFile = new File(nombreArchivo);
+        
         
     }
     
