@@ -1,0 +1,5 @@
+Se trata de completar una sencilla API para importar/exportar a Excel, que sea capaz de volcar matrices de texto a hojas en libros de Excel.
+
+Dado un libro Excel, deberá cargar el texto del libro en una lista o array de matrices 2D de texto (String [ ] [ ] ). También podría ser una matriz 3D.
+
+No necesitamos procesar fórmulas. Se trata de una API de importación/exportación de datos a Excel.
