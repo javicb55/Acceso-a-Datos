@@ -8,7 +8,7 @@ package holamundoexcel;
 
 /**
  *
- * @author matinal
+ * @author Javier Collado
  */
 public class Hoja {
     private String[][] datos;

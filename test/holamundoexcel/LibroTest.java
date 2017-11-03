@@ -115,8 +115,7 @@ public class LibroTest {
         Hoja result = instance.removeHoja(index);
         
         assertEquals("Error en removeHoja(): ",result.compare(expResult), true);
-        
-        
+       
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
     }
@@ -145,11 +144,15 @@ public class LibroTest {
     //Hacerla nosotros
     @Test
     public void testLoad() {
-        System.out.println("load");
-        Libro instance = new Libro();
-        instance.load();
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+        try {
+            System.out.println("load");
+            Libro instance = new Libro();
+            instance.load();
+            // TODO review the generated test code and remove the default call to fail.
+            //fail("The test case is a prototype.");
+        } catch (ExcelAPIException ex) {
+            Logger.getLogger(LibroTest.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     /**
